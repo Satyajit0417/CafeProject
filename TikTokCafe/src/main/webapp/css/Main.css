@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap')
+	;
+
+.demo {
+	font-family: 'Dancing Script', cursive;
+	font-size: 36px !important;
+	font-weight: bold;
+}
+
+.banner {
+	height: 641px;
+}
+
+.footer {
+	height: 73px;
+}
+

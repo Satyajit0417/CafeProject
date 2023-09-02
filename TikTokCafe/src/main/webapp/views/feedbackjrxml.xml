@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FeedbackReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b5322386-8e5b-494f-9b4c-83c32599e7ab">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (4)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from feedback]]>
+	</queryString>
+	<field name="feedbackId" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="feedbackId"/>
+		<property name="com.jaspersoft.studio.field.label" value="feedbackId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="feedback"/>
+	</field>
+	<field name="userName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="userName"/>
+		<property name="com.jaspersoft.studio.field.label" value="userName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="feedback"/>
+	</field>
+	<field name="message" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="message"/>
+		<property name="com.jaspersoft.studio.field.label" value="message"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="feedback"/>
+	</field>
+	<group name="feedbackId">
+		<groupExpression><![CDATA[$F{feedbackId}]]></groupExpression>
+	</group>
+	<group name="userName">
+		<groupExpression><![CDATA[$F{userName}]]></groupExpression>
+	</group>
+	<group name="message">
+		<groupExpression><![CDATA[$F{message}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="138" splitType="Stretch">
+			<staticText>
+				<reportElement x="-2" y="6" width="100" height="24" uuid="f8b8a47e-7896-42e8-8812-5e7edf2e9245"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Tik Tok Cafe]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="110" height="20" uuid="90a6ff54-ed21-4cfc-bbe2-5a63bc1c35d2"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Khanapur Road,Vita]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="100" height="20" uuid="0526d4d1-0184-49c1-adc6-0b63cb71811d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Mob:9284520008]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="120" width="595" height="1" uuid="237158bb-f6b9-4db2-9291-73bcf48ffad7"/>
+			</line>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="450" y="30" width="100" height="30" uuid="dd4375f3-ef8f-497d-9301-72f570b9e8e8"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="414" y="30" width="36" height="30" uuid="28863250-7279-4c14-8f9b-29494f52f0d0"/>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="30" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="60" y="0" width="100" height="30" uuid="0824b535-1435-4f85-af46-883a94323637">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b063f37a-7f4f-4a42-8627-5df977dba01f"/>
+				</reportElement>
+				<text><![CDATA[feedbackId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="0" width="130" height="30" uuid="8eed15e8-4b78-44b8-8aa1-9b1256647d12">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e7839909-e9e3-47b9-9baa-feb8582d91c9"/>
+				</reportElement>
+				<text><![CDATA[userName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="120" height="30" uuid="3507c349-83cb-4748-bfbc-3e4af065e2c3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e825204d-961f-4222-9447-37e8561774e6"/>
+				</reportElement>
+				<text><![CDATA[message]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="55" splitType="Stretch">
+			<textField>
+				<reportElement x="60" y="10" width="100" height="30" uuid="5b274319-ef06-4610-aa02-e0e569dfd1ee">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b063f37a-7f4f-4a42-8627-5df977dba01f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{feedbackId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="10" width="130" height="30" uuid="2618bc76-e4fe-499a-b427-aeef202a5fd1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e7839909-e9e3-47b9-9baa-feb8582d91c9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{userName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="10" width="120" height="30" uuid="6ab3b732-0623-4fc8-8c93-df33d04e2557">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e825204d-961f-4222-9447-37e8561774e6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{message}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

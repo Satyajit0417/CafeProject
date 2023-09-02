@@ -1,0 +1,76 @@
+@charset "ISO-8859-1";
+@import
+	url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap')
+	;
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@300&display=swap');	
+body{
+	background-color: #fff5f5;
+	font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.navbar-light {
+	background-color: #ede4e4 !important;
+}
+
+.DashboardCountCards{
+	border:2px solid black;
+	border-radius: 20px;
+	display: flex;
+	flex-direction:column;
+	margin: 2px auto;
+	align-items: center;
+	
+}
+
+.AddEmployeeContainer{
+	border:2px solid grey;
+	border-radius:10px;
+	box-shadow: 5px 10px #888888;
+	padding:0 10px;
+    
+}
+
+
+.salariesMainDiv{
+	border: 2px solid black;
+	border-radius: 40px;
+	box-shadow: 5px 10px #888888;
+}
+
+
+
+
+.demo ol li{
+	font-family: 'Kdam Thmor Pro', sans-serif;
+	font-size: 20px;
+}
+
+.emplist-footer{
+	background-color: #ede4e4 !important;
+    margin-top: 453px;
+    padding: 8px;
+}
+
+.reports-footer{
+	height: 50px;
+	margin-top:25%;
+}
+
+.feedback-footer{
+	height: 50px;
+	margin-top:28%;
+}
+
+.addemp-footer{
+	height: 50px;
+	margin-top:8%;
+}
+
+.salaries-footer{
+	height: 50px;
+	margin-top:6%;
+}
+.footer-dashboard{
+	height: 50px;
+	margin-top:21%;
+}
